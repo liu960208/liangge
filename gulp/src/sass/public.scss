@@ -1,0 +1,375 @@
+@import 'tong';
+#header{
+    width: 100%;
+    height: 38px;
+    #header_auto{
+        width:1190px;
+        height: 100%;
+        margin: auto;
+        ul{
+            height: 100%;
+            li{
+                font-size: 12px;
+                float: left;
+                color: #5e5e5e;
+                height: 100%;
+                a,span{
+                    display: block;
+                    height: 16px;
+                    margin-top: 12px;
+                }
+            }
+        }
+        .left{
+            float: left;
+            li{
+                margin-right: 5px;
+            }
+            a{
+                color: red;
+            }
+        }
+        .right{
+            float: right;
+            a{
+                color: #5e5e5e;
+                padding: 0 10px;
+                border-left: 1px solid #e0e0e0;
+            }
+            li{
+                height: 100%;
+                .dd{
+                    border: none;
+                }
+                .tel{
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// 头部
+header{
+    width: 1190px;
+    height: 184px;
+    margin: auto;
+    .img{
+        height: 60px;
+    }
+    .dl_header{
+        height: 124px;
+        width: 100%;
+        div{
+            height: 100%;
+        }
+        .left{
+            line-height: 124px;
+            width: 400px;
+            a{
+                display: inline-block;
+                width: 188px;
+                height: 100%;
+                background: url("../../dist/img/dllogo.png") no-repeat 0px 18px;
+            }
+        }
+        .bw{
+            width: 500px;
+            .top{
+                width: 100%;
+                height: 70px;
+                input{
+                    margin-top: 30px;
+                    float: left;
+                    height: 34px;
+                    border: 3px solid #0083ce;
+                }
+                #input_sousuo{
+                    width: 400px;
+                    text-indent: 10px;
+                }
+                #input_btn{
+                    width: 94px;
+                    height: 40px;
+                    cursor:pointer;
+                    font-size: 18px;
+                    color: #fff;
+                    background-color: #0083ce;
+                }
+            }
+            .bottom{
+                @include size(100%,50px);
+                ul{
+                    @include size();
+                    li{
+                      @include font();
+                      padding: 0 10px;
+                      margin-top: 5px;
+                      border-right: 1px solid #e7dde7;
+                      a{
+                          color: #5e5e5e;
+                      }
+                      .hs{
+                          color: red;
+                      }
+                    }
+                }
+            }
+        }
+        .right{
+            @include size(290px);
+            .cart{
+                @include size(132px,38px);
+                background: url("../../dist/img/dlcat.gif") no-repeat;
+                margin-top: 30px;
+                span{
+                    font-weight: bold;
+                    color: #fff;
+                    display: inline-block;
+                    margin-left: 48px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+// 导航
+#main{
+    @include size(1190px,618px);
+    margin: auto;
+    #list{
+        @include size(100%,34px);
+        border-bottom: 2px solid #1985d9;
+        li{
+            @include font();
+            font-size: 16px;
+            line-height: 36px;
+            a{  
+                color: #5e5e5e;
+                padding: 0 10px;
+            }
+        }
+        .classify{
+            @include size(180px,100%);
+            background-color: #1985d9;
+            cursor:pointer;
+            position: relative;
+            a{
+                color:#fff;
+            }
+            .menu{
+                display: none;
+                position: absolute;
+                @include size(180px,400px);
+                background-color: #299aef;
+                ul{
+                    @include size();
+                    li{
+                        width: 100px;
+                        height: 10%;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+   
+
+    // 图标
+    .ico{
+        @include size(100%,112px);
+        ul{
+            @include size(100%,112px);
+            li{
+                @include size(119px,89px);
+                float: left;
+                text-align: center;
+                a{
+                    span{
+                        font-size: 14px;
+                        color: #5e5e5e;
+                    }
+                    em{
+                        display: block;
+                        margin: auto;
+                        @include size(55px,55px);
+                        background: url("../../dist/img/dltubiao.png") no-repeat 0px 0px;
+                    }
+                }
+            }
+            li:nth-child(2){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -125px 0px;
+                }
+            }
+            li:nth-child(3){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -60px 0px;
+                }
+            }
+            li:nth-child(4){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -190px 0px;
+                }
+            }
+            li:nth-child(5){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -255px 0px;
+                }
+            }
+            li:nth-child(6){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -325px 0px;
+                }
+            }
+            li:nth-child(7){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -385px 0px;
+                }
+            }
+            li:nth-child(8){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -455px 0px;
+                }
+            }
+            li:nth-child(9){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -520px 0px;
+                }
+            }
+            li:nth-child(10){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -585px 0px;
+                }
+            }
+        } 
+    }
+}
+
+// 合作
+.foot{
+    @include size(100%,220px);
+    background-image: url("../../dist/img/dlft_bg.gif");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #0083ce;
+    float: left;
+    .foot_nav{
+        margin: auto;
+        @include size(1190px,100%);
+        a{
+            color:#fff;
+        }
+        ul{
+            height: 100%;
+            .foot_li{
+               float: left;
+                color:#fff;
+                font-size: 14px;
+                font-weight: bold;
+                margin:20px 30px;
+                ul{
+                    margin-top: 10px;
+                    li{
+                        font-weight: normal;
+                        margin-top: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            span{
+                font-size: 12px;
+                color: #fff;
+            }
+            .ewm1{
+                margin-left: 120px;
+                float: left;
+                margin-top: 30px;
+                em{display: block;
+                    @include size(85px,85px);
+                    background: url("../../dist/img/dlerweima.jpg") no-repeat;
+                }
+            }
+            .ewm2{
+                margin-left: 70px;
+                float: left;
+                margin-top: 30px;
+                em{
+                    display: block;
+                    @include size(85px,85px);
+                    background: url("../../dist/img/dlzhifubao.jpg") no-repeat;
+                }
+            }
+        }
+    }
+}
+
+// 底部
+footer{
+    @include size(1190px,140px);
+    position: relative;left:50%;
+    float: left;
+    margin-left: -595px;
+    ul{
+        @include size(100%,100px);
+        li{
+            @include font();
+            margin-right: 15px;
+            margin-top: 5px;
+            a{
+                color:#748ab6;
+            }
+        }
+    }
+    .footer_span{
+        position: absolute;
+        bottom: 0;
+        width: 900px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        color:#748ab6;
+    }
+    .footer_img{
+        position: absolute;
+        width: 250px;
+        height: 100px;
+        right: 0;
+        bottom: 0;
+        a img{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+
+.sidebar{
+    @include size(50px,200px);
+    display:block;
+    bottom:20px;
+    right:20px;
+    position:fixed;
+    border:1px solid #fff;
+    ul{
+        li{
+            @include size(100%,50px);
+        }
+        li:nth-child(1){
+            background: url("../../dist/img/dlad7150092133ba59557773488013afcb16cc564f.png") no-repeat 0px 0px;
+        }
+        li:nth-child(2){
+            background: url("../../dist/img/dlad7150092133ba59557773488013afcb16cc564f.png") no-repeat 0px -50px;
+        }
+        li:nth-child(3){
+            background: url("../../dist/img/dlad7150092133ba59557773488013afcb16cc564f.png") no-repeat 0px -100px;
+        }
+        li:nth-child(4){
+            background: url("../../dist/img/dlad7150092133ba59557773488013afcb16cc564f.png") no-repeat 0px -150px;
+        }
+    }
+}

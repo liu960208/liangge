@@ -1,0 +1,517 @@
+@import 'tong';
+#main{
+    @include size(1190px,9770px);
+    margin: auto;
+    //导航
+    #list{
+        @include size(100%,34px);
+        border-bottom: 2px solid #1985d9;
+        li{
+            @include font();
+            font-size: 16px;
+            line-height: 36px;
+            a{  
+                color: #5e5e5e;
+                padding: 0 10px;
+            }
+        }
+        .classify{
+            @include size(180px,100%);
+            background-color: #1985d9;
+            cursor:pointer;
+            position: relative;
+            a{
+                color:#fff;
+            }
+            .menu{
+                display: none;
+                position: absolute;
+                @include size(180px,400px);
+                background-color: #299aef;
+                ul{
+                    @include size();
+                    li{
+                        width: 100px;
+                        height: 10%;
+                        font-size: 14px;
+                    }
+                }
+            }
+        } 
+    }
+    // 路径
+    .way{
+        @include size(100%,40px);
+        span{
+            line-height: 40px;
+            margin-left: 20px;
+            font-size: 12px;
+            a{
+                color: #5e5e5e
+            }
+        }
+    }
+    //详情
+    .details{
+        @include size(100%,9516px);
+        // 左边内容
+        .details_left{
+            @include size(995px,100%);
+            // 第一部分内容
+            .details_content{
+                @include size(995px,438px);
+                // 左边
+                .dc_left{
+                    @include size(302px,420px);
+                    background-color: yellow;
+                    .dl_top{
+                        @include size(300px,300px);
+                        border: 1px solid #d8d8d8;
+                    }
+                    .dl_bottom{
+                        @include size(300px,120px);
+                        text-align: center;
+                        ul{
+                            @include size(300px,80px);
+                            li{
+                                @include size(60px,60px);
+                                float: left;
+                                margin-left: 10px;
+                                margin-top: 10px;
+                                border: 1px solid #d8d8d8;
+                                background-repeat: no-repeat;
+                                background-size: 90% 100%;
+                                background-position: center;
+                                cursor:pointer;
+                            }
+                            li:nth-child(1){
+                                background-image: url("../../dist/img/xq_smallimg01.jpg");
+                            }
+                            li:nth-child(2){
+                                background-image: url("../../dist/img/xq_smallimg02.png");
+                            }
+                            li:nth-child(3){
+                                background-image: url("../../dist/img/xq_smallimg03.png");
+                            }
+                            li:nth-child(4){
+                                background-image: url("../../dist/img/xq_smallimg04.png");
+                            }
+                        }
+                        button{
+                            @include size(50px,24px);
+                            font-size: 12px;
+                            background-color: #fafafa;
+                            border:none;
+                            text-align: center;
+                            border: 1px solid #CCCCCC;
+                            border-radius: 0 3px 3px 0;
+                            color: #555754;
+                        }
+                    }
+                }
+
+                // 右边
+                .dc_right{
+                    width: 673px;
+                    margin-left: 20px;
+                    color: #5e5e5e;
+                    font-size: 14px;
+                    h3{
+                        padding-bottom: 15px;
+                        list-style: none;
+                        color: #666;
+                        font-style: normal;
+                        font-size: 19px;
+                    }
+                    b{
+                        display: inline-block;
+                        color: red;
+                        margin-left: 10px;
+                        font-size: 22px;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    a{
+                        color: #5e5e5e;
+                        margin-left: 300px;
+                    }
+                    .goolds{
+                        @include size(670px,175px);
+                        margin-top: 30px;
+                        background-color: #fffdf4;
+                        font-family: "arial";
+                        border: 1px solid #ffe6ca;
+                        font-size: 12px;
+                        ul{
+                            @include size(670px,175px);
+                            li{
+                                @include size(520px,27px);
+                                line-height: 27px;
+                                margin-top: 5px;
+                                margin-left: 40px;
+                                a{
+                                    margin-left: 0px;
+                                    text-align: center;
+                                }
+                                .a_btn{
+                                    display: inline-block;
+                                    @include size(20px,23px);
+                                    overflow: hidden;
+                                    vertical-align: middle;
+                                    border: 1px solid #a9a9a9;
+                                }
+                                input{
+                                    @include size(30px,23px);
+                                    vertical-align: middle;
+                                    text-align: center;
+                                }
+                            }
+                            li:nth-child(3){
+                                span{
+                                    display: inline-block;
+                                    margin-left: 5px;
+                                    background-color: #dddddd;
+                                    padding: 0 5px;   
+                                }
+                            }
+                            li:nth-child(4){
+                                margin-top: 30px;
+                                @include size(560px,41px);
+                                margin-left: 10px;
+                                button{
+                                    margin-left: 20px;
+                                    border: none;
+                                    cursor:pointer;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                }
+                                button:nth-child(1){
+                                    @include size(94px,40px);
+                                    background-color: #d81e29;
+                                }
+                                button:nth-child(2){
+                                    @include size(114px,40px);
+                                    background-color: #fc560c;
+                                }
+                                button:nth-child(3){
+                                    border: none;
+                                    color: #000200;
+                                    font-weight: 100;
+                                    font-size: 12px;
+                                    background-color: transparent;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // 第二部分内容
+            // 选项卡
+            .tab{
+                width: 100%;
+                margin-top: 25px;
+                border-bottom: 1px solid #CCCCCC;
+                span{
+                    @include size(88px,24px);
+                    background-color: #EFEFEF;
+                    display: inline-block;
+                    margin-left: 5px;
+                    font-size: 14px;
+                    background-color: #efefef;
+                    line-height: 24px;
+                    text-align: center;
+                    border:1px solid #ccc;
+                    a{
+                        color: #000200;
+                    }
+                }
+                span:nth-child(1){
+                    font-weight: bold;
+                    border-top: 2px solid #dd010b;
+                    border-bottom: none;
+                }
+            }
+            // 手机介绍
+            .cellphone{
+                @include size(100%,26px);
+                background-color: #eeeeee;
+                padding: 10px 15px;
+                margin-top: 20px;
+                border: 1px solid #ccc;
+                font-size: 12px;
+                line-height: 26px;
+                color: #5e5e5e;
+                li{
+                    float: left;
+                    @include size(320px,26px);
+                    a{
+                        color: #5e5e5e;
+                    }
+                }
+            }
+            .xq_dt{
+                margin-top: 20px;
+            }
+            .goods_comment{
+                @include size(993px,183px);
+                border:1px solid #ccc;
+                margin-top: 10px;
+                font-size: 14px;
+                color: #555555;
+                p{
+                    display: inline-block;
+                    text-indent: 10px;
+                    @include size(100%,32px);
+                    line-height: 32px;
+                    font-weight: 400;
+                    background-color: #efefef;
+                }
+                ul{
+                    @include size(963px,126px);
+                    padding: 0px 10px 0px 20px;
+                    li{
+                        @include size(387px,76px);
+                        padding: 15px 20px;
+                        float: left;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        p{
+                            background-color: transparent;
+                        }
+                        b{
+                            color: #e8ac00;
+                            font-weight: bold;
+                        }
+                    }
+                    li:nth-child(1){
+                        span{
+                            font-weight: bold; 
+                        }
+                        b{
+                            margin-left: 50px;
+                        }
+                        p{
+                            b{
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                    li:nth-child(2){
+                        p:nth-child(2),p:nth-child(3){
+                            margin-left: 25px;
+                        }
+                    }
+                }
+                .pl{
+                    @include size(960px,24px);
+                    margin-left: 15px;
+                    border-top: 1px solid #ccc;
+                    font-size: 12px;
+                    line-height: 24px;
+                    b{
+                        color: red;
+                    }
+                }
+            }
+
+            .goods_information{
+                @include size(993px,183px);
+                border:1px solid #ccc;
+                margin-top: 10px;
+                font-size: 14px;
+                color: #555555;
+                p{
+                    display: inline-block;
+                    text-indent: 10px;
+                    @include size(100%,32px);
+                    line-height: 32px;
+                    font-weight: 400;
+                    background-color: #efefef;
+                }
+                .gi_top{
+                    @include size(953px,25px);
+                    padding: 20px;
+                    color: #5e5e5e;
+                    font-size: 12px;
+                    span{
+                        display: inline-block;
+                        @include size(70px,23px);
+                        padding-right: 10px;
+                        font-size: 12px;
+                        border: 1px solid #ccc;
+                        text-align: center;
+                        line-height: 23px;
+                        background-color: #f9f9f9;
+                        cursor:pointer;
+                    }
+                    a{
+                        color: #5e5e5e;
+                    }
+                }
+            }
+        }
+        // 右侧内容
+        .details_right{
+            @include size(180px,100%);
+            margin-left: 15px;
+            .sp_left{
+                @include size(180px,1375px);
+                .sl_top{
+                    @include size(180px,74px);
+                    ul{
+                        @include size(178px,72px);
+                        font-size: 14px;
+                        font-weight: bold;
+                        border: 1px solid #ccc;
+                        li:nth-child(1){
+                            @include size(100%,35px);
+                            background-color: #dddddd;
+                            line-height: 35px;
+                            text-indent: 20px;
+                            a{
+                                color:#5e5e5e;
+                            }
+                        }
+                        li:nth-child(2){
+                            @include size(100%,37px);
+                            background-color: #f5f5f5;
+                            line-height: 37px;
+                            a{
+                                color:#cc0000;
+                            }
+                        }
+                    }
+                }
+                .sl_bottom{
+                    @include size(178px,1190px);
+                    margin-top: 20px;
+                    border:1px solid #ccc;
+                    h3{
+                        text-indent: 10px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 10px 0;
+                        border-bottom: 1px solid #dbdbdb;
+                    }
+                    ul{
+                        li{
+                            @include size(158px,218px);
+                            padding:0 10px;
+                            text-align: center;
+                            font-size: 14px;
+                            color: #5e5e5e;
+                            img{
+                                margin-top: 5px;
+                            }
+                            a{
+                                color: #5e5e5e;
+                            }
+                            em{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                .sl_foot{
+                    @include size(180px,74px);
+                    margin-top: 10px;
+                    ul{
+                        @include size(178px,72px);
+                        font-size: 14px;
+                        text-indent: 20px;
+                        li{
+                            border: 1px solid #dbdbdb;
+                            color: #5e5e5e;
+                            span{
+                                color: #333333;
+                                font-weight: bold;
+                            }
+                        }
+                        li:nth-child(1){
+                            @include size(100%,35px);
+                            line-height: 35px;
+                        }
+                        li:nth-child(2){
+                            @include size(100%,37px);
+                            line-height: 37px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 图标
+    .ico{
+        @include size(100%,112px);
+        margin-top: 70px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                @include size(119px,89px);
+                float: left;
+                text-align: center;
+                a{
+                    span{
+                        font-size: 14px;
+                        color: #5e5e5e;
+                    }
+                    em{
+                        display: block;
+                        margin: auto;
+                        @include size(55px,55px);
+                        background: url("../../dist/img/dltubiao.png") no-repeat 0px 0px;
+                    }
+                }
+            }
+            li:nth-child(2){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -125px 0px;
+                }
+            }
+            li:nth-child(3){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -60px 0px;
+                }
+            }
+            li:nth-child(4){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -190px 0px;
+                }
+            }
+            li:nth-child(5){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -255px 0px;
+                }
+            }
+            li:nth-child(6){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -325px 0px;
+                }
+            }
+            li:nth-child(7){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -385px 0px;
+                }
+            }
+            li:nth-child(8){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -455px 0px;
+                }
+            }
+            li:nth-child(9){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -520px 0px;
+                }
+            }
+            li:nth-child(10){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -585px 0px;
+                }
+            }
+        } 
+    }
+}

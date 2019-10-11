@@ -1,0 +1,272 @@
+@import 'tong';
+#main{
+    @include size(1190px,1680px);
+    margin: auto;
+    //导航
+    #list{
+        @include size(100%,34px);
+        border-bottom: 2px solid #1985d9;
+        li{
+            @include font();
+            font-size: 16px;
+            line-height: 36px;
+            a{  
+                color: #5e5e5e;
+                padding: 0 10px;
+            }
+        }
+        .classify{
+            @include size(180px,100%);
+            background-color: #1985d9;
+            cursor:pointer;
+            position: relative;
+            a{
+                color:#fff;
+            }
+            .menu{
+                display: block;
+                position: absolute;
+                @include size(180px,400px);
+                background-color: #299aef;
+                ul{
+                    @include size();
+                    li{
+                        width: 100px;
+                        height: 10%;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    //轮播
+    .banner{
+        @include size(1190px,400px);
+        .banner_left{
+            @include size(930px);
+        }
+        .banner_centent{
+            @include size(750px);
+            position: relative;
+            background: url("../../dist/img/zy_lb1.jfif") no-repeat;
+           ul{
+            position: absolute;
+            bottom: 10px;
+            left:40%;
+                li{
+                    border-radius: 50%;
+                    @include size(20px,20px);
+                    background-color: aqua  ;
+                    float: left;
+                    margin-left: 20px;
+                }
+            }
+        }
+        .banner_right{
+            @include size(259px,350px);
+            border-right: 1px solid #ccc;
+            div{
+                border-bottom: 1px solid #ccc;
+            }
+            .banner_r_header{
+                @include size(239px,35px);
+                line-height: 35px;
+                padding: 0 10px;
+                span:nth-child(2){
+                    color: red;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+            // 品牌
+            .banner_ico{
+                @include size(100%,170px);
+                ul{
+                    @include size(100%,170px);
+                    li{
+                        @include size(64px,80px);
+                        float: left;
+                        text-align: center;
+                        a{
+                            span{
+                                font-size: 12px;
+                                color: #5e5e5e;
+                            }
+                            em{
+                                display: block;
+                                margin: auto;
+                                @include size(55px,55px);
+                                background: url("../../dist/img/zy_ico.png") no-repeat 5px 10px;
+                            }
+                        }
+                    }
+                    li:nth-child(2){
+                        em{
+                            background: url("../../dist/img/zy_ico.png") no-repeat -40px 10px;
+                        }
+                    }
+                    li:nth-child(3){
+                        em{
+                            background: url("../../dist/img/zy_ico.png") no-repeat -85px 10px;
+                        }
+                    }
+                    li:nth-child(4){
+                        em{
+                            background: url("../../dist/img/zy_ico.png") no-repeat -130px 10px;
+                        }
+                    }
+                    li:nth-child(5){
+                        em{
+                            background: url("../../dist/img/zy_ico.png") no-repeat -175px 10px;
+                        }
+                    }
+                    li:nth-child(6){
+                        em{
+                            background: url("../../dist/img/zy_ico.png") no-repeat -220px 10px;
+                        }
+                    }
+                    li:nth-child(7){
+                        em{
+                            background: url("../../dist/img/zy_ico.png") no-repeat -265px 10px;
+                        }
+                    }
+                    li:nth-child(8){
+                        em{
+                            background: url("../../dist/img/zy_ico.png") no-repeat -310px 10px;
+                        }
+                    }
+                } 
+            }
+            .affiche{
+                @include size(239px,35px);
+                line-height: 35px;
+                padding: 0 10px;
+                a{
+                    font-size: 12px;
+                    color: red;
+                }
+            }
+            .affiche_list{
+                @include size(259px,105px);
+                ul li{
+                    font-size: 12px;
+                    @include size(239px,25px);
+                    padding-left: 20px;
+                    line-height: 25px;
+                    background: url("../../dist/img/zy_dian.png") no-repeat 10px 12px;
+                    a{
+                        color:#5f5a60;
+                    }
+                }
+            }
+        }
+    }
+
+    //今日限购
+   .astrict{
+        @include size(100%,150px);
+        margin: 10px 0 20px 0;
+        ul{
+            @include size();
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 250px;
+                height: 100%;
+            }
+            li:nth-child(1){
+                width: 180px;
+                background: url("../../dist/img/zy_sz.png") no-repeat;
+            }
+            li:nth-child(2){
+                background: url("../../dist/img/zy_img1.jpg") no-repeat;
+            }
+            li:nth-child(3){
+                background: url("../../dist/img/zy_img2.jpg") no-repeat;
+            }
+            li:nth-child(4){
+                background: url("../../dist/img/zy_img3.jpg") no-repeat;
+            }
+            li:nth-child(5){
+                background: url("../../dist/img/zy_img4.jpg") no-repeat;
+            }
+        }
+    }
+
+    // 热卖商品
+    .commodity{
+        @include size(100%,398px);
+        border-top: 2px solid #fb4f4f;
+        .comm_left{
+            @include size(181px,100%);
+            .cl_top{
+                @include size(181px,85px);
+                background-color: #fc4e4d;
+                line-height: 85px;
+                text-align: center;
+                span{
+                    font-size: 18px;
+                    color:#fff;
+                    font-weight: bold;
+                }
+            }
+            .cl_top2{
+                background-color: #fabc05;
+            }
+            .cl_bottom{
+                @include size(181px,317px);
+                span{
+                    display: block;
+                    @include size(181px,317px);
+                    background-image: url("../../dist/img/zy_01.jpg");
+                    background-size: 100% 100%;
+                }
+            }
+            .cl_bt2{
+                span{
+                    background-image: url("../../dist/img/zy2_00.jpg");
+                }
+            }
+        }
+        .comm_right{
+            @include size(1009px,100%);
+            ul{
+                @include size(1009px,100%);
+                .xiaochi{
+                    img{
+                        @include size(140px,140px);
+                    }
+                }
+                li{
+                    @include size(200px,200px);
+                    float: left;
+                    border-bottom: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    text-align: center;
+                    font-size: 14px;
+                    a{
+                        img{
+                            margin-top: 10px;
+                        }
+                        p{
+                            color: #5f5e63;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    span{
+                        color:red;
+                    }
+                }
+            }
+        }
+    }
+    .cm2{
+        border-top: 2px solid #fabc05;
+    }
+
+    .ad_img{
+        @include size(100%,100px);
+        margin: 10px 0;
+    }
+}

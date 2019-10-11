@@ -1,0 +1,137 @@
+@import 'tong';
+#main{
+    width: 1190px;
+    height: auto;
+    margin: auto;
+    //导航
+    #list{
+        @include size(100%,34px);
+        border-bottom: 2px solid #1985d9;
+        li{
+            @include font();
+            font-size: 16px;
+            line-height: 36px;
+            a{  
+                color: #5e5e5e;
+                padding: 0 10px;
+            }
+        }
+        .classify{
+            @include size(180px,100%);
+            background-color: #1985d9;
+            cursor:pointer;
+            position: relative;
+            a{
+                color:#fff;
+            }
+            .menu{
+                display: none;
+                position: absolute;
+                @include size(180px,400px);
+                background-color: #299aef;
+                ul{
+                    @include size();
+                    li{
+                        width: 100px;
+                        height: 10%;
+                        font-size: 14px;
+                    }
+                }
+            }
+        } 
+    }
+
+    //购物车
+    .cart{
+        width: 100%;
+        h1{
+            color: #666;
+            font-size: 24px;
+        }
+        .cart_empty{
+            @include size(1188px,65.5px);
+            padding: 80px 0 90px;
+            text-indent: 400px;
+            font-size: 14px;
+            line-height: 2;
+            color: #666666;
+            border: 1px solid #E6E6E6;
+            background-color: #EFEFEF;
+            span{
+                font-weight: bold;
+            }
+            a{
+                color: #0563c3;
+                text-decoration: underline;
+            }
+        }
+
+        // 浏览过的商品
+        .cart_hst{
+            @include size(100%,160px);
+            margin: 20px 0;
+            border: 1px solid #E6E6E6;
+            h2{
+                text-indent: 20px;
+                line-height: 40px;
+                background-color: #EFEFEF;
+                font-size: 14px;
+                color: #666666;
+            }
+            ul{
+                width: 100%;
+                li{
+                    @include size(206px,98px);
+                    margin: 10px 16px;
+                    float: left;
+                    div:nth-child(1){
+                        float: left;
+                        @include size(96px,96px);
+                        border:1px solid #E6E6E6;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    div:nth-child(2){
+                        float: left;
+                        color: #5e5e5e;
+                        font-size: 12px;
+                        text-align: center;
+                        @include size(101px,96px);
+                        p{
+                            margin-top: 5px;
+                            text-align: left;
+                            margin-left: 5px;
+                            span{
+                                color: red;
+                                font-size: 14px;
+                            }
+                        }
+                        b{
+                            display:block;
+                            margin-top: 10px;
+                            @include size(84px,23px);
+                            color: #fff;
+                            line-height: 23px;
+                            background-color: rgb(238, 90, 37);
+                        }
+                    }
+                }
+                li:nth-child(1){
+                    div:nth-child(1){
+                        background-image: url("../../dist/img/cart_01.jpg");
+                    }
+                }
+                li:nth-child(2){
+                    div:nth-child(1){
+                        background-image: url("../../dist/img/cart_02.jpg");
+                    }
+                }
+                li:nth-child(3){
+                    div:nth-child(1){
+                        background-image: url("../../dist/img/cart_03.png");
+                    }
+                }
+            }
+        }
+    }
+}

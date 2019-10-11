@@ -1,0 +1,366 @@
+@import 'tong';
+#main{
+    @include size(1190px,2160px);
+    margin: auto;
+    //导航
+    #list{
+        @include size(100%,34px);
+        border-bottom: 2px solid #1985d9;
+        li{
+            @include font();
+            font-size: 16px;
+            line-height: 36px;
+            a{  
+                color: #5e5e5e;
+                padding: 0 10px;
+            }
+        }
+        .classify{
+            @include size(180px,100%);
+            background-color: #1985d9;
+            cursor:pointer;
+            position: relative;
+            a{
+                color:#fff;
+            }
+            .menu{
+                display: none;
+                position: absolute;
+                @include size(180px,400px);
+                background-color: #299aef;
+                ul{
+                    @include size();
+                    li{
+                        width: 100px;
+                        height: 10%;
+                        font-size: 14px;
+                    }
+                }
+            }
+        } 
+    }
+    // 路径
+    .way{
+        @include size(100%,40px);
+        span{
+            line-height: 40px;
+            margin-left: 20px;
+            font-size: 12px;
+            a{
+                color: #5e5e5e
+            }
+        }
+    }
+    //商品列表
+    .shangPin{
+        width: 1190px;
+        .sp_left{
+            @include size(180px,1375px);
+            .sl_top{
+                @include size(180px,74px);
+                ul{
+                    @include size(178px,72px);
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: 1px solid #ccc;
+                    li:nth-child(1){
+                        @include size(100%,35px);
+                        background-color: #dddddd;
+                        line-height: 35px;
+                        text-indent: 20px;
+                        a{
+                            color:#5e5e5e;
+                        }
+                    }
+                    li:nth-child(2){
+                        @include size(100%,37px);
+                        background-color: #f5f5f5;
+                        line-height: 37px;
+                        a{
+                            color:#cc0000;
+                        }
+                    }
+                }
+            }
+            .sl_bottom{
+                @include size(178px,1190px);
+                margin-top: 20px;
+                border:1px solid #ccc;
+                h3{
+                    text-indent: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #dbdbdb;
+                }
+                ul{
+                    li{
+                        @include size(158px,218px);
+                        padding:0 10px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #5e5e5e;
+                        img{
+                            margin-top: 5px;
+                        }
+                        a{
+                            color: #5e5e5e;
+                        }
+                        em{
+                            color: red;
+                        }
+                    }
+                }
+            }
+            .sl_foot{
+                @include size(180px,74px);
+                margin-top: 10px;
+                ul{
+                    @include size(178px,72px);
+                    font-size: 14px;
+                    text-indent: 20px;
+                    li{
+                        border: 1px solid #dbdbdb;
+                        color: #5e5e5e;
+                        span{
+                            color: #333333;
+                            font-weight: bold;
+                        }
+                    }
+                    li:nth-child(1){
+                        @include size(100%,35px);
+                        line-height: 35px;
+                    }
+                    li:nth-child(2){
+                        @include size(100%,37px);
+                        line-height: 37px;
+                    }
+                }
+            }
+        }
+        //右侧
+        .sp_right{
+            @include size(1000px,1976px);
+            margin-left: 10px;
+            //上
+            .sr_top{
+                @include size(998px,130px);
+                margin-bottom: 10px;
+                border: 1px solid #dbdbdb;
+                div{
+                    border-top: 1px solid #dbdbdb;
+                }
+                .filter{
+                    @include size(978px,35px);
+                    line-height: 35px;
+                    padding: 0 10px;
+                    font-size: 12px;
+                    color: #5e5e5e;
+                    background-color: #dddddd;
+                    b{
+                        font-weight: bold;
+                    }
+                    em{
+                        color:red;
+                    }
+                    a{
+                        color: #5e5e5e;
+                        float: right;
+                    }
+                }
+                .filter_2,.filter_3{
+                    @include size(998px,30px);
+                    line-height: 30px;
+                    text-indent: 20px;
+                    font-size: 12px;
+                    color: #5e5e5e;
+                    background-color: #f3f3f3;
+                    a{
+                        color:#666666;
+                        margin-left: 20px;
+                        padding: 3px;
+                    }
+                    a:nth-child(2){
+                        color:#fff;
+                        background-color: red;
+                    }
+                }
+            }
+            //下
+            .sr_bottom{
+                width: 100%;
+                .sort{
+                    @include size(998px,66px);
+                    border: 1px solid #dddddd;
+                    .sort_top{
+                        @include size(998px,40px);
+                        background-color: #f3f3f3;
+                        font-size: 12px;
+                        color: #666666;
+                        line-height: 40px;
+                        span{
+                            border: 1px solid #999999;
+                            padding: 5px 10px;
+                            margin-left: 10px;
+                            background-color: #f6f6f6;
+                        }
+                        span:nth-child(1){
+                            color: #dd484a;
+                        }
+                        b{
+                            margin-left: 5px;
+                        }
+                        select{
+                            border-color: #A9A9A9;
+                        }
+                        a{
+                            color: #666666;
+                            margin-left: 10px;
+                        }
+                    }
+                    .sort_bottom{
+                        @include size(998px,25px);
+                        font-size: 12px;
+                        color: #666666;
+                        line-height: 25px;
+                        text-indent: 15px;
+                        input{
+                            margin-top: 5px;
+                            margin-right: 2px;
+                        }
+                    }
+                }
+                
+                // 商品列表
+                .goods_list{
+                    width: 100%;
+                    ul{
+                        width: 100%;
+                        li{
+                            @include size(230px,314px);
+                            padding: 15px 10px;
+                            text-align: center;
+                            font-size: 14px;
+                            float: left;
+                            border-bottom: 1px dotted #ccc;
+                            img{
+                                margin: 5px;
+                            }
+                            a{
+                                color: #5e5e5e;
+                            }
+                            p{
+                                margin-bottom: 10px;    
+                            }
+                            em{
+                                display: block;
+                                margin-bottom: 10px;
+                                font-weight: bold;
+                                color: red;
+                            }
+                            .a_btn{
+                                display: inline-block;
+                                @include size(20px,23px);
+                                overflow: hidden;
+                                vertical-align: middle;
+                                border: 1px solid #a9a9a9;
+                            }
+                            input{
+                                @include size(30px,23px);
+                                vertical-align: middle;
+                                text-align: center;
+                            }
+                            button{
+                                @include size(44px,23px);
+                                color: #798d8d;
+                                border: none;
+                                border: 1px solid #CCCCCC;
+                                background-color:#f7f7f7;
+                                margin-left: 10px;
+                                cursor:pointer; 
+                            }
+                            button:nth-child(6){
+                                color: #fff;
+                                border: none;
+                                @include size(75px,23px);
+                                background-color: #fc550d;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 图标
+    .ico{
+        @include size(100%,112px);
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                @include size(119px,89px);
+                float: left;
+                text-align: center;
+                a{
+                    span{
+                        font-size: 14px;
+                        color: #5e5e5e;
+                    }
+                    em{
+                        display: block;
+                        margin: auto;
+                        @include size(55px,55px);
+                        background: url("../../dist/img/dltubiao.png") no-repeat 0px 0px;
+                    }
+                }
+            }
+            li:nth-child(2){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -125px 0px;
+                }
+            }
+            li:nth-child(3){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -60px 0px;
+                }
+            }
+            li:nth-child(4){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -190px 0px;
+                }
+            }
+            li:nth-child(5){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -255px 0px;
+                }
+            }
+            li:nth-child(6){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -325px 0px;
+                }
+            }
+            li:nth-child(7){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -385px 0px;
+                }
+            }
+            li:nth-child(8){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -455px 0px;
+                }
+            }
+            li:nth-child(9){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -520px 0px;
+                }
+            }
+            li:nth-child(10){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -585px 0px;
+                }
+            }
+        } 
+    }
+}

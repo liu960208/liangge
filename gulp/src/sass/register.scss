@@ -1,0 +1,206 @@
+@import 'tong';
+
+// 导航
+#main{
+    @include size(1190px,850px);
+    margin: auto;
+    #list{
+        @include size(100%,34px);
+        border-bottom: 2px solid #1985d9;
+        li{
+            @include font();
+            font-size: 16px;
+            line-height: 36px;
+            a{  
+                color: #5e5e5e;
+                padding: 0 10px;
+            }
+        }
+        .classify{
+            @include size(180px,100%);
+            background-color: #1985d9;
+            cursor:pointer;
+            position: relative;
+            a{
+                color:#fff;
+            }
+            .menu{
+                display: none;
+                position: absolute;
+                @include size(180px,400px);
+                background-color: #299aef;
+                ul{
+                    @include size();
+                    li{
+                        width: 100px;
+                        height: 10%;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    //注册
+    .register{
+        @include size(630px,710px);
+        .register_box{
+            @include size(100%,690px);
+            border: 2px solid #cccccc;
+            margin-top: 10px;
+            h2{
+                margin: 5px 20px;
+                color: #1566c0;
+            }
+            .register_input{
+                @include size(630px,640px);
+                border-top: 1px solid #cccccc;
+                ul{
+                    @include size(100%,100%);
+                    li{
+                        @include size(100%,70px);
+                        line-height: 70px;
+                        .left{
+                            width: 140px;
+                            text-align: right;
+                            span{
+                                color: red;
+                            }
+                        }
+                        .right{
+                            input{
+                                @include size(298px,30px);
+                                border:1px solid #ccc;
+                                margin-left: 20px;
+                                text-indent: 5px;
+                            }
+                            #verify{
+                                width: 100px;
+                            }
+                            button{
+                                width: 150px;
+                                height: 34px;
+                                color: #fff;
+                                background-color: #f59113;
+                                border: none;
+                                cursor:pointer;
+                            }
+                        }
+                    }
+                    .xy{
+                        text-align: center;
+                    }
+                    #register_btn{
+                        margin-left: 150px;
+                        button{
+                            width: 70px;
+                            height: 30px;
+                            color: #fff;
+                            border: none;
+                            cursor:pointer;
+                            background-color: #fc570e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dl{
+        width: 510px;
+        height: 195px;
+        border-left:1px dotted #ccc;
+        margin-left: 30px;
+        margin-top: 10px;
+        .dl_span{
+            width: 350px;
+            height: 60px;
+            margin-left: 30px;
+            margin-top: 50px;
+            span{
+                font-size: 12px;
+                line-height: 40px;
+                color: #5e5e5e;
+            }
+            button{
+                width: 150px;
+                height: 50px;
+                font-size: 18px;
+                background-color: #d51d27;
+                color: #fff;
+            }
+        }
+    }
+
+    // 图标
+    .ico{
+        @include size(100%,137px);
+        padding-top: 10px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                @include size(119px,89px);
+                float: left;
+                text-align: center;
+                a{
+                    span{
+                        font-size: 14px;
+                        color: #5e5e5e;
+                    }
+                    em{
+                        display: block;
+                        margin: auto;
+                        @include size(55px,55px);
+                        background: url("../../dist/img/dltubiao.png") no-repeat 0px 0px;
+                    }
+                }
+            }
+            li:nth-child(2){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -125px 0px;
+                }
+            }
+            li:nth-child(3){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -60px 0px;
+                }
+            }
+            li:nth-child(4){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -190px 0px;
+                }
+            }
+            li:nth-child(5){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -255px 0px;
+                }
+            }
+            li:nth-child(6){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -325px 0px;
+                }
+            }
+            li:nth-child(7){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -385px 0px;
+                }
+            }
+            li:nth-child(8){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -455px 0px;
+                }
+            }
+            li:nth-child(9){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -520px 0px;
+                }
+            }
+            li:nth-child(10){
+                em{
+                    background: url("../../dist/img/dltubiao.png") no-repeat -585px 0px;
+                }
+            }
+        } 
+    }
+}
